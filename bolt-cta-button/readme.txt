@@ -4,7 +4,7 @@ Tags: call now button, whatsapp, sticky bar, floating button, click to call
 Requires at least: 5.4
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,9 @@ Yes. The FAB main button is a proper `<button>` element with `aria-expanded`. Pr
 4. Analytics tab — per-button click statistics with 7-day and 30-day breakdowns
 
 == Changelog ==
+
+= 2.0.7 =
+* FIX: "Show on Mobile" and "Show on Desktop" toggles now work correctly when mobile and desktop use different templates. Previously the toggle was ignored unless both devices used the same template, causing the FAB to remain visible on desktop even when desktop visibility was disabled.
 
 = 2.0.6 =
 * NEW: "Reset to Defaults" button to instantly restore all plugin settings to factory defaults.

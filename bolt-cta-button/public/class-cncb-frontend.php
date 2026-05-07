@@ -270,15 +270,12 @@ class CNCB_Frontend {
 			);
 		}
 
-		// Device visibility.
-		$same_tpl = $tpl['mobile'] === $tpl['desktop'];
-		if ( $same_tpl ) {
-			if ( empty( $o['show_desktop'] ) ) {
-				$css .= '@media(min-width:769px){.cncb-bar,.cncb-fab{display:none!important;}}';
-			}
-			if ( empty( $o['show_mobile'] ) ) {
-				$css .= '@media(max-width:768px){.cncb-bar,.cncb-fab{display:none!important;}}';
-			}
+		// Device visibility — applies regardless of template (same or different per device).
+		if ( empty( $o['show_desktop'] ) ) {
+			$css .= '@media(min-width:769px){.cncb-bar,.cncb-fab{display:none!important;}}';
+		}
+		if ( empty( $o['show_mobile'] ) ) {
+			$css .= '@media(max-width:768px){.cncb-bar,.cncb-fab{display:none!important;}}';
 		}
 
 		if ( $css ) {
