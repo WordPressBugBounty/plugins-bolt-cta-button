@@ -469,7 +469,7 @@
 				// FAB settings
 				fab_position: $('#cncb-fab-position').val() || 'right-bottom',
 				fab_icon: $('#cncb-fab-icon').val() || 'phone',
-				fab_bg_color: self.getColorValue('#cncb-fab-bg-color', '#25D366'),
+				fab_bg_color: self.getColorValue('#cncb-fab-bg-color', '#075e54'),
 				fab_text_color: self.getColorValue('#cncb-fab-text-color', '#ffffff'),
 				fab_size: parseInt($('#cncb-fab-size').val(), 10) || 56,
 				fab_open_direction: $('#cncb-fab-open-direction').val() || 'up',
@@ -686,7 +686,7 @@
 			$fab.show();
 			$fab.empty();
 
-			var fabBgColor = options.fab_bg_color || '#25D366';
+			var fabBgColor = options.fab_bg_color || '#075e54';
 			var fabTextColor = options.fab_text_color || '#ffffff';
 			var fabSize = options.fab_size || 56;
 			var fabIconKey = options.fab_icon || 'phone';

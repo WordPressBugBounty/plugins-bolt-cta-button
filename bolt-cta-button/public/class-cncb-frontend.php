@@ -262,7 +262,7 @@ class CNCB_Frontend {
 				$css .= sprintf( '#cncb-fab{top:%dpx;}', $fm['top'] );
 			}
 
-			$fab_bg  = sanitize_hex_color( $o['fab_bg_color'] ) ?? '#25D366';
+			$fab_bg  = sanitize_hex_color( $o['fab_bg_color'] ) ?? '#075e54';
 			$fab_txt = sanitize_hex_color( $o['fab_text_color'] ) ?? '#ffffff';
 			$css .= sprintf(
 				'#cncb-fab .cncb-fab-main{background-color:%s !important;color:%s !important;}#cncb-fab .cncb-fab-main:hover{background-color:%s !important;color:%s !important;}#cncb-fab .cncb-fab-main svg{fill:%s !important;color:%s !important;}',

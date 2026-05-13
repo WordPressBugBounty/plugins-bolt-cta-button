@@ -24,6 +24,28 @@ class CNCB_Admin {
 		add_action( 'admin_menu', array( $this, 'add_menu_page' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 		add_action( 'wp_ajax_cncb_save_options', array( $this, 'ajax_save_options' ) );
+		add_action( 'in_admin_header', array( $this, 'suppress_foreign_admin_notices' ), 1000 );
+	}
+
+	/**
+	 * Remove third-party admin notices on this plugin's settings page only.
+	 *
+	 * Keeps the settings UI clean — other plugins' update prompts,
+	 * promo banners, and review nags don't appear here. Affects only the
+	 * Bolt CTA Button settings screen; all other admin pages are untouched.
+	 */
+	public function suppress_foreign_admin_notices() {
+		if ( ! function_exists( 'get_current_screen' ) ) {
+			return;
+		}
+		$screen = get_current_screen();
+		if ( ! $screen || false === strpos( $screen->id, 'bolt-cta-button' ) ) {
+			return;
+		}
+		remove_all_actions( 'admin_notices' );
+		remove_all_actions( 'all_admin_notices' );
+		remove_all_actions( 'user_admin_notices' );
+		remove_all_actions( 'network_admin_notices' );
 	}
 
 	/* ------------------------------------------------------------------ */

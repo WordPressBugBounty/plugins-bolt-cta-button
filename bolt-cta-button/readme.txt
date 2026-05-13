@@ -1,18 +1,30 @@
-=== Bolt CTA Button ===
+=== Bolt CTA Button – Floating Call Button for WordPress ===
 Contributors: ismeteroglu
-Tags: call now button, whatsapp, sticky bar, floating button, click to call
+Tags: whatsapp, click to call, floating button, contact button, sticky bar
 Requires at least: 5.4
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A call now button bar & floating action button for WhatsApp, Phone, and more. Click analytics and full customization.
+WhatsApp click-to-chat, click-to-call & floating contact button. Sticky bar on mobile, FAB on desktop, click analytics, WooCommerce ready.
 
 == Description ==
 
-**Bolt CTA Button** is a powerful call now button plugin that adds sticky call-to-action buttons to your WordPress website. Choose between a **Sticky Bar** or a **Floating Action Button (FAB)** — or use different templates on mobile and desktop.
+**Bolt CTA Button** is a lightweight WordPress plugin for adding WhatsApp click-to-chat, click-to-call, and floating contact buttons to your site in seconds. Boost conversions with a sticky bar on mobile and a floating action button (FAB) on desktop — or pick either layout for both. Built-in click analytics let you see which contact channel actually drives leads.
+
+Perfect for restaurants, service businesses, e-commerce stores, and anyone who wants to make it effortless for visitors to reach out by **WhatsApp**, **phone**, **Telegram**, **Messenger**, **email**, or any custom link.
+
+= Why Bolt CTA Button? =
+
+* **Two layouts in one plugin** — Sticky call now bar + Floating Action Button (FAB). No need to choose; use both, one per device.
+* **Mobile-first conversion** — Always-visible call button on mobile dramatically improves call/chat conversion rates.
+* **WhatsApp + Click-to-Call built in** — Pre-configured WhatsApp chat button and `tel:` click-to-call link, no setup needed.
+* **Click analytics included** — Track which contact button gets clicked, daily and over time. No third-party plugin required.
+* **Lightweight & fast** — Vanilla JS frontend (no jQuery), conditionally loaded assets, no impact on Core Web Vitals.
+* **Works with any theme** — Defensive CSS isolation keeps the button consistent across Astra, OceanWP, Divi, GeneratePress, Hello Elementor, Twenty Twenty-Four, and more.
+* **No premium upsell wall** — Every feature is free. Forever.
 
 = Two Templates =
 
@@ -99,6 +111,11 @@ Yes. The FAB main button is a proper `<button>` element with `aria-expanded`. Pr
 4. Analytics tab — per-button click statistics with 7-day and 30-day breakdowns
 
 == Changelog ==
+
+= 2.0.8 =
+* NEW: Bolt CTA Button settings page now hides unrelated admin notices from other plugins (update prompts, promos, review nags) for a cleaner configuration experience. Other admin pages are unaffected.
+* IMPROVED: Default WhatsApp button color changed from bright green (#25D366) to WhatsApp's darker official color (#075e54). This significantly improves text/icon contrast on the button and resolves Google PageSpeed Insights warnings about low color contrast.
+* IMPROVED: Plugin display name updated for clarity — now shows as "Bolt CTA Button – Floating Call Button for WordPress" in the WordPress admin plugins list.
 
 = 2.0.7 =
 * FIX: "Show on Mobile" and "Show on Desktop" toggles now work correctly when mobile and desktop use different templates. Previously the toggle was ignored unless both devices used the same template, causing the FAB to remain visible on desktop even when desktop visibility was disabled.
