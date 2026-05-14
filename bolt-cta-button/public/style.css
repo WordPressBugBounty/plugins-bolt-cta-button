@@ -52,6 +52,20 @@
 	pointer-events: none;
 }
 
+/* Defensive: override any global "path { display: none }" or similar rules
+   that some sites have in their custom CSS, which would hide our SVG icons. */
+#cncb-bar svg path,
+#cncb-bar svg circle,
+#cncb-bar svg rect,
+#cncb-bar svg polygon,
+#cncb-bar svg line,
+#cncb-bar svg g {
+	display: inline !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+	fill: currentColor;
+}
+
 /* Base Bar */
 .cncb-bar {
 	position: fixed;

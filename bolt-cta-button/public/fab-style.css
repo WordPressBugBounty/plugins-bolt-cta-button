@@ -55,6 +55,20 @@
 	pointer-events: none;
 }
 
+/* Defensive: override any global "path { display: none }" or similar rules
+   that some sites have in their custom CSS, which would hide our SVG icons. */
+#cncb-fab svg path,
+#cncb-fab svg circle,
+#cncb-fab svg rect,
+#cncb-fab svg polygon,
+#cncb-fab svg line,
+#cncb-fab svg g {
+	display: inline !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+	fill: currentColor;
+}
+
 /* ── FAB Container ── */
 .cncb-fab {
 	position: fixed;

@@ -4,7 +4,7 @@ Tags: whatsapp, click to call, floating button, contact button, sticky bar
 Requires at least: 5.4
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.8
+Stable tag: 2.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -111,6 +111,9 @@ Yes. The FAB main button is a proper `<button>` element with `aria-expanded`. Pr
 4. Analytics tab — per-button click statistics with 7-day and 30-day breakdowns
 
 == Changelog ==
+
+= 2.0.9 =
+* FIX: Button icons now display correctly on sites that have aggressive global CSS rules (e.g. "path { display: none }") in their custom styles. Defensive CSS now forces our SVG icon elements visible within the plugin's scope only.
 
 = 2.0.8 =
 * NEW: Bolt CTA Button settings page now hides unrelated admin notices from other plugins (update prompts, promos, review nags) for a cleaner configuration experience. Other admin pages are unaffected.

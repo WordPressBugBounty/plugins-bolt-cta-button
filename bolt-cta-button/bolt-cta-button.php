@@ -3,7 +3,7 @@
  * Plugin Name: Bolt CTA Button – Floating Call Button for WordPress
  * Plugin URI:  https://wordpress.org/plugins/bolt-cta-button/
  * Description: A call now button & floating action button for WhatsApp, Phone, and more. Two templates, click analytics, WooCommerce support, and full customization.
- * Version:     2.0.8
+ * Version:     2.0.9
  * Author:      ismeteroglu
  * Author URI:  https://ismeteroglu.com
  * License:     GPL-2.0-or-later
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CNCB_VERSION', '2.0.8' );
+define( 'CNCB_VERSION', '2.0.9' );
 define( 'CNCB_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CNCB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'CNCB_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );

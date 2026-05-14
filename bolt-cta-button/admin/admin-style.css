@@ -1047,3 +1047,17 @@
 	font-style: italic;
 	color: #50575e;
 }
+
+/* Defensive: ensure live preview SVG icons are visible even when the site's
+   custom CSS contains aggressive rules like "path { display: none }". */
+.cncb-preview-phone svg path,
+.cncb-preview-phone svg circle,
+.cncb-preview-phone svg rect,
+.cncb-preview-phone svg polygon,
+.cncb-preview-phone svg line,
+.cncb-preview-phone svg g {
+	display: inline !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+	fill: currentColor;
+}
